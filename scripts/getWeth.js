@@ -12,7 +12,7 @@ let IWeth
 const accounts=  await ethers.getSigners()
 const deployer = accounts[0].address
 const signer= await ethers.getSigner(deployer)
-console.log(signer)
+// console.log(signer)
 //wethtokenContractAddress 
 //0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
 // const Provider =  getDefaultProvider('http://127.0.0.1:8545/')
@@ -30,10 +30,10 @@ console.log("getting balance...")
 console.log(`got ${balanceofDeployer.toString()} amount of weth`)
 
 }
-getWeth().then(()=>process.exit(0))
-.catch((error)=>{
-    console.log(error)
-    process.exit(1)
-})
+// getWeth().then(()=>process.exit(0))
+// .catch((error)=>{
+//     console.log(error)
+//     process.exit(1)
+// })
 
 module.exports={getWeth,AMOUNT}
